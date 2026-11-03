@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Uma história interativa sobre inteligência artificial, pesquisa e escolhas." />
+    <title>Entre Linhas | História interativa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./style.css" />
+    <script type="module" src="./js/script.js"></script>
+  </head>
+  <body>
+    <main class="game-shell">
+      <header class="topbar">
+        <a class="wordmark" href="./" aria-label="Entre Linhas, início">
+          <span class="wordmark-mark" aria-hidden="true">E</span>
+          <span>ENTRE LINHAS</span>
+        </a>
+        <p class="course-label">MATEMÁTICA II <span>/</span> 3º ANO</p>
+      </header>
+
+      <section class="intro-screen" id="introScreen" aria-labelledby="introTitle">
+        <div class="intro-copy">
+          <p class="eyebrow"><span class="status-dot"></span> HISTÓRIA INTERATIVA · 01</p>
+          <h1 id="introTitle">Uma ideia.<br />Dois jeitos de<br /><em>investigar.</em></h1>
+          <p class="intro-description">Uma inteligência artificial pode criar textos, imagens e vozes. Suas escolhas definem como você vai experimentar, verificar e explicar o que ela faz.</p>
+          <form class="intro-form" id="startForm">
+            <label class="player-field" for="playerName">
+              <span class="player-field-label">SEU NOME</span>
+              <input class="player-name-input" id="playerName" name="playerName" type="text" maxlength="24" autocomplete="nickname" placeholder="Ex.: Alex" />
+            </label>
+            <button class="action-button" id="startButton" type="submit">
+              <span>Iniciar</span>
+              <span class="button-arrow" aria-hidden="true">↗</span>
+            </button>
+          </form>
+        </div>
+
+        <div class="visual-panel" aria-hidden="true">
+          <div class="visual-index">LABORATÓRIO DE IDEIAS · 01</div>
+          <div class="visual-art">
+            <div class="art-orbit orbit-one"></div>
+            <div class="art-orbit orbit-two"></div>
+            <div class="art-core"><span>IA</span></div>
+            <div class="artifact artifact-image"><span class="artifact-sun"></span><span class="artifact-hill"></span></div>
+            <div class="artifact artifact-voice"><span class="voice-line"></span><span class="voice-line"></span><span class="voice-line"></span><span class="voice-line"></span><span class="voice-line"></span><span class="voice-line"></span><span class="voice-line"></span></div>
+            <div class="artifact artifact-text"><span>texto</span><span class="text-line"></span><span class="text-line short"></span></div>
+          </div>
+          <div class="visual-caption"><span>TEXTO · IMAGEM · VOZ</span><span>IA / 01</span></div>
+        </div>
+      </section>
+
+      <section class="story-screen" id="storyScreen" aria-labelledby="sceneTitle" hidden>
+        <div class="story-meta">
+          <p class="eyebrow"><span class="status-dot"></span> REGISTRO DA HISTÓRIA</p>
+          <div class="story-status">
+            <span class="participant-name" id="survivorNameTag"></span>
+            <span class="scene-count" id="sceneCount">HISTÓRIA EM ANDAMENTO</span>
+          </div>
+        </div>
+        <div class="story-content" aria-live="polite">
+          <h1 class="story-heading" id="sceneTitle">Uma decisão está à sua espera.</h1>
+          <div class="answer-list" id="answerList"></div>
+          <p class="story-note" id="storyNote" hidden></p>
+        </div>
+        <div class="story-footer">
+          <span>ENTRE LINHAS</span>
+          <span>MATEMÁTICA II · PROGRAMAÇÃO</span>
+        </div>
+      </section>
+
+      <footer class="page-footer">
+        <span>PROJETO DE PROGRAMAÇÃO</span>
+        <span>IA · ESCOLA · RESPONSABILIDADE</span>
+      </footer>
+    </main>
+  </body>
+</html>
