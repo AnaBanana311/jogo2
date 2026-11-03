@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Uma história interativa sobre inteligência artificial, pesquisa e escolhas." />
-    <title>Entre Linhas | História interativa</title>
+    <meta name="description" content="Uma história interativa de sobrevivência em uma ilha, com escolhas sobre inteligência artificial." />
+    <title>Última Maré | Sobrevivência na ilha</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -14,21 +14,21 @@
   <body>
     <main class="game-shell">
       <header class="topbar">
-        <a class="wordmark" href="./" aria-label="Entre Linhas, início">
-          <span class="wordmark-mark" aria-hidden="true">E</span>
-          <span>ENTRE LINHAS</span>
+        <a class="wordmark" href="./" aria-label="Última Maré, início">
+          <span class="wordmark-mark" aria-hidden="true">U</span>
+          <span>ÚLTIMA MARÉ</span>
         </a>
-        <p class="course-label">MATEMÁTICA II <span>/</span> 3º ANO</p>
+        <p class="course-label">SOBREVIVÊNCIA <span>/</span> IA</p>
       </header>
 
       <section class="intro-screen" id="introScreen" aria-labelledby="introTitle">
         <div class="intro-copy">
-          <p class="eyebrow"><span class="status-dot"></span> HISTÓRIA INTERATIVA · 01</p>
-          <h1 id="introTitle">Uma ideia.<br />Dois jeitos de<br /><em>investigar.</em></h1>
-          <p class="intro-description">Uma inteligência artificial pode criar textos, imagens e vozes. Suas escolhas definem como você vai experimentar, verificar e explicar o que ela faz.</p>
+          <p class="eyebrow"><span class="status-dot"></span> DIÁRIO DE BORDO · DIA 01</p>
+          <h1 id="introTitle">Naufrágio.<br />Ilha deserta.<br /><em>Uma escolha.</em></h1>
+          <p class="intro-description">Depois do naufrágio da excursão, sua turma encontra um aparelho com inteligência artificial. Ele pode ajudar na ilha, mas cada resposta precisa ser conferida.</p>
           <form class="intro-form" id="startForm">
             <label class="player-field" for="playerName">
-              <span class="player-field-label">SEU NOME</span>
+              <span class="player-field-label">NOME DO SOBREVIVENTE</span>
               <input class="player-name-input" id="playerName" name="playerName" type="text" maxlength="24" autocomplete="nickname" placeholder="Ex.: Alex" />
             </label>
             <button class="action-button" id="startButton" type="submit">
@@ -39,8 +39,13 @@
         </div>
 
         <div class="visual-panel" aria-hidden="true">
-          <div class="visual-index">LABORATÓRIO DE IDEIAS · 01</div>
+          <div class="visual-index">ILHA DESCONHECIDA · 01</div>
           <div class="visual-art">
+            <div class="island-sky"></div>
+            <div class="sea"></div>
+            <div class="island"></div>
+            <div class="island-palm palm-one"><span class="palm-trunk"></span><span class="palm-leaves"></span></div>
+            <div class="island-palm palm-two"><span class="palm-trunk"></span><span class="palm-leaves"></span></div>
             <div class="art-orbit orbit-one"></div>
             <div class="art-orbit orbit-two"></div>
             <div class="art-core"><span>IA</span></div>
@@ -48,13 +53,13 @@
             <div class="artifact artifact-voice"><span class="voice-line"></span><span class="voice-line"></span><span class="voice-line"></span><span class="voice-line"></span><span class="voice-line"></span><span class="voice-line"></span><span class="voice-line"></span></div>
             <div class="artifact artifact-text"><span>texto</span><span class="text-line"></span><span class="text-line short"></span></div>
           </div>
-          <div class="visual-caption"><span>TEXTO · IMAGEM · VOZ</span><span>IA / 01</span></div>
+          <div class="visual-caption"><span>ACAMPAMENTO · SEM RESGATE</span><span>DIA 01</span></div>
         </div>
       </section>
 
       <section class="story-screen" id="storyScreen" aria-labelledby="sceneTitle" hidden>
         <div class="story-meta">
-          <p class="eyebrow"><span class="status-dot"></span> REGISTRO DA HISTÓRIA</p>
+          <p class="eyebrow"><span class="status-dot"></span> DIÁRIO DE SOBREVIVÊNCIA</p>
           <div class="story-status">
             <span class="participant-name" id="survivorNameTag"></span>
             <span class="scene-count" id="sceneCount">HISTÓRIA EM ANDAMENTO</span>
@@ -66,14 +71,14 @@
           <p class="story-note" id="storyNote" hidden></p>
         </div>
         <div class="story-footer">
-          <span>ENTRE LINHAS</span>
+          <span>ÚLTIMA MARÉ</span>
           <span>MATEMÁTICA II · PROGRAMAÇÃO</span>
         </div>
       </section>
 
       <footer class="page-footer">
         <span>PROJETO DE PROGRAMAÇÃO</span>
-        <span>IA · ESCOLA · RESPONSABILIDADE</span>
+        <span>ENCONTRE ÁGUA · VERIFIQUE OS SINAIS · PROTEJA A EQUIPE</span>
       </footer>
     </main>
   </body>

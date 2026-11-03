@@ -60,7 +60,7 @@ function iniciaJogo() {
   historiaFinal = "";
   const participante = nome(playerNameInput.value);
   playerNameInput.value = participante;
-  survivorNameTag.textContent = `PARTICIPANTE: ${participante}`;
+  survivorNameTag.textContent = `SOBREVIVENTE: ${participante}`;
   introScreen.hidden = true;
   storyScreen.hidden = false;
   mostraPergunta();
